@@ -1,0 +1,67 @@
+/* Set a background image for the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('background-image.png');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the calculator on the page */
+.calculator {
+    width: 300px;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+/* Style for the display area */
+.display {
+    background-color: #333;
+    color: #fff;
+    font-size: 2em;
+    padding: 20px;
+    text-align: right;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Style for the buttons container */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+/* Style for each button */
+.btn {
+    background-color: #f0f0f0;
+    border: none;
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Special styling for the equals button */
+.btn:last-child {
+    background-color: #ff8c00;
+    color: white;
+}
+
+.btn:last-child:hover {
+    background-color: #e07b00;
+}
+
+/* Responsive design: Make buttons larger on smaller screens */
+@media (max-width: 400px) {
+    .btn {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+}
